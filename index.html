@@ -5,42 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ветеренария</title>
   </head>
-  <body>
-    <header>
-      <div>Логотип</div>
-      <div>
-        <nav>
-          <ul>
-            <li><a href="#home">Главная</a></li>
-            <li><a href="#services">Усуги</a></li>
-            <li><a href="#contacts">Контакты</a></li>
+  <body class="page">
+    <header class="header page__header">
+      <img
+        src="./images/image1.jpg"
+        alt="Логотип"
+        width="250px"
+        height="250px"
+        class="logo header__logo"
+      />
+      <div class="menu header__menu">
+        <nav class="navigation menu_navigation">
+          <ul class="navigation__list">
+            <li class="nagivation__item">
+              <a class="nagivation__link" href="#home">Главная</a>
+            </li>
+            <li class="nagivation__item">
+              <a class="nagivation__link" href="#services">Усуги</a>
+            </li>
+            <li class="nagivation__item">
+              <a class="nagivation__link" href="#contacts">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <button>Запись на прём</button>
+        <button class="appointment menu__appointment">Запись на прём</button>
       </div>
-      <button>вход и регистрация</button>
+      <button class="authorization header__authorization">
+        вход и регистрация
+      </button>
     </header>
-    <main>
-      <section>
-        Скидка
-        <div>Товар</div>
+    <main class="main page__main">
+      <section class="offer main__offer">
+        <span class="offer__text">Скидка</span>
+        <div class="offer__link">Товар</div>
       </section>
-      <section>
-        <h2>Отзывы владельцев животных</h2>
-        <div>
-          <div>Фото, текст отзыва</div>
-          <div>Фото, текст отзыва</div>
-        </div>
-        <button>-></button>
+      <section class="reviews main__reviews">
+        <h2 class="reviews__heading">Отзывы владельцев животных</h2>
+        <ul class="reviews__items">
+          <li class="reviews__item">Фото, текст отзыва</li>
+          <li class="reviews__item">Фото, текст отзыва</li>
+        </ul>
       </section>
     </main>
-    <footer>
-      <div>Карта с адресом</div>
-      <section>
-        <h2>Контакты</h2>
-        <ul>
-          <li>Телефон</li>
-          <li>Ссылка на соцсети</li>
+    <footer class="footer page__footer">
+      <div class="map footer__map">Карта с адресом</div>
+      <section class="contact footer__contact">
+        <h2 class="contact__heading">Контакты</h2>
+        <ul class="contact__list">
+          <li class="contact__item">Телефон</li>
+          <li class="contact__item">Ссылка на соцсети</li>
         </ul>
       </section>
     </footer>
